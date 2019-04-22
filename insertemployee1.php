@@ -2,7 +2,7 @@
   $conn =new mysqli("localhost","root","root","bank") ;
   if($conn->connect_error)
   {
-        die("fuck of".$conn->connect_error) ;
+        die("Cannot connect to the database ".$conn->connect_error) ;
   }
   
    $var1 = mysqli_real_escape_string($conn,$_POST['name']);
@@ -20,7 +20,7 @@ $var4 = mysqli_real_escape_string($conn,$_POST['date']);
   }
   else
   {
-        echo "fuck" ;
+        echo "Error " ;
   }
    if($conn->query($sql1)==TRUE)
   {
@@ -29,7 +29,7 @@ $var4 = mysqli_real_escape_string($conn,$_POST['date']);
   }
   else
   {
-        echo "fuck".$sql."<br>".$conn->error ;
+        echo "Error ".$sql."<br>".$conn->error ;
   }
  
   $conn->close() ;
