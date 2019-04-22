@@ -1,6 +1,6 @@
 <?php
 
-       $connection=mysqli_connect("localhost","root","root","bank")or die("FUCK u".mysqli_connect_error()) ;
+       $connection=mysqli_connect("localhost","root","root","bank")or die("Cannot connect to the database ".mysqli_connect_error()) ;
        if($connection){
 
 
