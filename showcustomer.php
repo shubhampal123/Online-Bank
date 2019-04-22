@@ -3,7 +3,7 @@
   $conn =new mysqli("localhost","root","root","bank") ;
   if($conn->connect_error)
   {
-  	die("fuck of".$conn->connect_error) ;
+  	die("Cannot connect to the database ".$conn->connect_error) ;
   }
   $sql ="SELECT CUSTOMER_ID,CUSTOMER_NAME  FROM CUSTOMER " ;
   $result=$conn->query($sql) ;
