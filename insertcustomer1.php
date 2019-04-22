@@ -20,12 +20,12 @@ $var4 = mysqli_real_escape_string($conn,$_POST['city']);
   }
   else
   {
-  	echo "fuck".$sql."<br>".$conn->error ; }
+  	echo "Error ".$sql."<br>".$conn->error ; }
    if($conn->query($sql1)==TRUE)
   {
         echo "Success" ; }
   else
   {
-        echo "fuck".$sql."<br>".$conn->error ;  }
+        echo "Error ".$sql."<br>".$conn->error ;  }
   $conn->close() ;
  ?>
