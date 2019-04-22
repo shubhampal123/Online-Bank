@@ -21,7 +21,7 @@
    echo "Success" ;
 
   else
-   echo "Errot ".$sql."<br>".$conn->error ;
+   echo "Error ".$sql."<br>".$conn->error ;
 
     if($conn->query($sql1)==TRUE)
    echo "Success" ;
