@@ -2,7 +2,7 @@
   $conn =new mysqli("localhost","root","root","bank") ;
   if($conn->connect_error)
   {
-        die("fuck of".$conn->connect_error) ;
+        die("Cannot connect to the database ".$conn->connect_error) ;
   }
   $sql ="SELECT EMPLOYEE_ID,EMPLOYEE_NAME  FROM EMPLOYEE " ;
   $result=$conn->query($sql) ;
