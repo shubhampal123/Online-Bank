@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-    $conn=mysqli_connect("localhost","root","root","bank") or die("Fuck u") ;
+    $conn=mysqli_connect("localhost","root","root","bank") or die("Cannot connect to the database") ;
      if(!$conn)
      {
         echo "failed" ;
@@ -21,13 +21,13 @@
    echo "Success" ;
 
   else
-   echo "fuck".$sql."<br>".$conn->error ;
+   echo "Errot ".$sql."<br>".$conn->error ;
 
     if($conn->query($sql1)==TRUE)
    echo "Success" ;
 
   else
-   echo "fuck".$sql."<br>".$conn->error ;
+   echo "Error ".$sql."<br>".$conn->error ;
   
  header('Location:insertcustomer.php') ;
 ?>
