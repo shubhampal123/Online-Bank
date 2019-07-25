@@ -3,7 +3,7 @@
   $conn =new mysqli("localhost","root","root","bank") ;
    if($conn->connect_error)
 {
-   die("fuck of".$conn->connect_error) ;
+   die("Error".$conn->connect_error) ;
 }
 if($_POST['name']=="root"&&$_POST['password']=="root")
     {
